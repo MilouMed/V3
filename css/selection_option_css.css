@@ -1,0 +1,540 @@
+/***                                                                              INCENTIVE HOUSE  
+                                                                                                2020-11-12
+                                                                                                          MILOU MOHAMED  
+
+***/ 
+
+
+.jx-title{
+  font-size:30px;
+  font-weight:600;
+  color:#000;
+  /* color:rgb(255, 255, 255); */
+  text-transform: uppercase; 
+  text-align:center;
+   font-family: merienda;
+   margin:10px auto 20px auto;
+}
+ .jx-subtitle {
+  font-size:23px;
+  font-weight:300;
+  color:rgb(46, 44, 44);  
+  text-align:center;
+   font-family: merienda;
+   margin:40px 0px 0px 0px;
+}
+.jx-subtitle >p  {
+  font-size:23px;
+  font-weight:300;
+  color:rgb(46, 44, 44);  
+  text-align:center;
+   font-family: merienda;
+}
+    
+    #div_img_impprte_smol {
+      border: 0px solid #fffefead;
+      margin: 0px;
+      padding: 3px;
+      display: inline-block;
+      box-shadow: 0px 0px 50px #0c0c0c;
+    }
+    
+    #div_img_impprte_smol:hover, #div_img_impprte_big:hover {
+      box-shadow: 0px 0px 50px #f1e5e5;
+    }
+    
+    
+    
+    #img_img_impprte_smol {
+      margin: 0px;
+      margin-bottom: inherit;
+      width: 460px;
+      height: 360px;
+      transition: transform 0.5s;
+    }
+    
+    #ul_vid, #ul_img {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #img_img_impprte_smol:hover {
+      transform: scale(1.2, 1.2);
+    }
+    
+    #li_img {
+      overflow: hidden;
+    }
+    .container_glry
+    {
+      margin-top:50px;
+    } 
+     
+
+
+    /*****Partenaire*/
+    
+
+    .partenaire,.partenaire_img
+    {
+      margin:3px !important;
+      display:inline-block;
+      width:200px;
+      max-width:210px;
+      min-width:90px;
+      box-shadow:0px 1px 4px 1px red;
+    }
+ 
+
+    .partenaire
+    { 
+      margin:2px 0px 0px 0px ;
+      display:inline-block;
+      
+    }
+
+  /*Incentive House Botton de social Medais */
+  
+    body{
+    padding: 0;
+    margin: 0;
+  }
+
+  .middle_I_H{ 
+  position:relative;  
+    text-align: center; 
+    margin-top:20px; 
+    border-top:white 20px solid; 
+    border-top:#d80000 20px solid; 
+  }
+   
+  
+  .btn_{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1; 
+    margin: 10px; 
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    /* box-shadow: 0 5px 15px -5px #ff0b0b70; */
+    color: #3498db;
+    color: #383434;
+    overflow: hidden;
+    position: relative;
+  }
+  .btn_ i{
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
+  }
+  .btn_:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1; 
+  }
+  .btn_::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+  .btn_:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+  @keyframes aaa {
+    0%{
+      left: -110%;
+      top: 90%;
+    }50%{
+      left: 10%;
+      top: -30%;
+    }100%{
+      top: -10%;
+      left: -10%;
+    }
+  }
+  /*****************************************************************/
+  
+  
+    
+ .btn_.fb_:before {
+    background-color: #3b5998; 
+  }
+ .btn_.fb_   { 
+    color: #5583e3; 
+  }
+
+
+ .btn_.tw_:before {
+    background-color: #3cf; 
+  }
+ .btn_.tw_  {
+    color: #3cf; 
+  }
+
+
+
+  .btn_.gg_:before {
+    background-color: #dc4a38;
+  }
+ .bbtn_tn.gg_ .fa {
+    color: #dc4a38;
+  }
+
+
+  .btn_.pnt_:before {
+   background-color: red;
+ }
+ .btn_.pnt_ .fa {
+   color: red;
+ }
+
+
+ .btn_.ins_:before {
+  background-color:  #f9536d;
+}
+.btn_.ins_   { 
+  color:  #f9536d;
+}
+ /*fin Social Media**/
+    
+    
+    /***********Responcive Med I H ******************************/
+    @media (min-width: 981px) and (max-width: 1900px) {
+    
+      #div_img_impprte_smol {
+        border: 2px solid #ffffff;
+        margin: 1px;
+        padding: 5px;
+        display: inline-block;
+      }
+      #img_img_impprte_smol {
+        margin-bottom: 0px;
+        width: 290px;
+        height: 200px;
+      }
+      .container_srv {
+        margin-top: 150px;
+      }
+    }
+    
+    @media (max-width: 979px) {
+      #div_img_impprte_big, #div_img_impprte_smol {
+        border: 2px solid #ffffff;
+        margin: 5px;
+        padding: 3px;
+        display: inline-block;
+      }
+      #img_img_impprte_big, #img_img_impprte_smol {
+        margin-bottom: 0px;
+        width: 301px;
+        height: 190px;
+      }
+      .ligne_red::after, .ligne_red::before {
+        width: 30%;
+      }
+      .ligne_red {
+        width: 100%;
+        position: relative;
+      }
+      .card-title {
+        font: 20px/30px 'Raleway', Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        margin: 0;
+      }
+      .card-text {
+        font-size: 16px;
+        margin: 0px auto;
+      }
+      * {
+  /*       background-color: #8c97c3; */
+      }
+     
+    }
+    
+ 
+
+
+
+ 
+    
+    /*********************Bien **********************************/
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      *{
+  /*       color:yellow;
+        background-color:yellow; */
+      }
+       
+      /******Images**/
+      
+       #div_img_impprte_big, #div_img_impprte_smol {
+        border: 2px solid #ffffff;
+        margin:0px;
+        padding: 0px; 
+        display: inline-block;
+      }
+       #div_img_impprte_smol { 
+        margin: 1px;
+        padding: 0px;   
+        width:49%; 
+      }
+      #img_img_impprte_big, #img_img_impprte_smol {
+        margin-bottom: 0px;
+        margin:0px;
+        height: 100px; 
+       width: 100%; 
+      }
+      #li_img {  
+      margin:0px;
+    }
+  
+    .Btn_More
+    {
+      margin:15px auto 30px auto;
+    }
+  
+    /*Partenaire   */
+    #Div_Partenaire_1,#Div_Partenaire_2{ 
+margin:0px;
+padding:0px;
+  text-align:center
+    }
+      .partenaire,.partenaire_img
+    { 
+      margin:1px; 
+      padding:0px;
+      text-align:center;
+      width:90px;   
+  text-align:center;
+      
+    }
+    
+
+    /**** btn_ Social Media I H***********/
+
+  .btn_{ 
+    width: 50px;
+    height: 50px;
+    background: #f1f1f1; 
+    margin: 2px; 
+    margin: 2%; 
+    box-shadow: 0 5px 15px -5px #00000070;  
+  }
+  .btn_ i{
+    line-height: 55px;
+    font-size: 30px; 
+  }
+
+
+
+
+    }
+    
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      *{
+  /*     color:#FF9800;
+        background-color:#FF9800;  */ 
+      }  
+      
+        /******Images**/
+      
+       #div_img_impprte_big, #div_img_impprte_smol {
+        border: 2px solid #ffffff;
+        margin:0px;
+        padding: 0px; 
+        display: inline-block;
+      }
+       #div_img_impprte_smol { 
+        margin: 1px;
+        padding: 0px;   
+        width:49%; 
+      }
+      #img_img_impprte_big, #img_img_impprte_smol {
+        margin-bottom: 0px;
+        margin:0px;  
+        height: 160px;  
+        width:100%; 
+      }
+      #li_img {  
+      margin:0px;
+    }
+
+
+    
+    /*Partenaire*/
+    
+    /*Partenaire   */
+    #Div_Partenaire_1,#Div_Partenaire_2{ 
+margin:0px;
+padding:0px;
+  text-align:center
+    }
+      .partenaire,.partenaire_img
+    {
+      margin:1px;
+      padding:0px;
+      text-align:center;
+      width:150px;
+      text-align:center;
+    }
+    
+
+
+    }
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      *{
+  /*     color:#2196F3;
+        background-color:#2196F3; */  
+      }
+      
+    
+           /******Images**/
+      
+       #div_img_impprte_big, #div_img_impprte_smol {
+        border: 2px solid #ffffff;
+        margin:0px;
+        padding: 0px; 
+        display: inline-block;
+      }
+       #div_img_impprte_smol { 
+        margin: 1px;
+        padding: 0px;   
+        width:33%; 
+      }
+      #img_img_impprte_big, #img_img_impprte_smol {
+        margin-bottom: 0px;
+        margin:0px;  
+        height: 160px;  
+        width:100%; 
+      }
+      #li_img {  
+      margin:0px;
+    }
+      
+  
+    }
+    
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        *{
+    /*     color:#0aff44;
+        background-color:#0aff44; */
+      }
+        .col-md-4{
+        min-width:auto;
+      }
+     
+       /******Images**/
+      
+       #div_img_impprte_big, #div_img_impprte_smol {
+        border: 2px solid #ffffff;
+        margin:0px;
+        padding: 0px; 
+        display: inline-block;
+      }
+       #div_img_impprte_smol {  
+        padding: 0px; 
+        margin:2px; 
+        height:170px;  
+        width:24%;  
+      }
+      #img_img_impprte_big, #img_img_impprte_smol {
+        margin-bottom: 0px;
+        margin:2px;  
+        height: 160px;  
+        width:100%; 
+      }
+      #li_img {  
+      margin:0px;
+    }
+    
+      /*Partenaire   */ 
+      .partenaire,.partenaire_img
+    { 
+      margin:2px; 
+      padding:0px;
+      text-align: center; 
+      width:170px;    
+      
+    }
+      
+  
+    }
+    
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {   
+      *{
+    /*  color:#ff0aeb;
+      background-color:#ff0aeb; */ 
+    }
+    
+   
+/******Images**/
+      
+       #div_img_impprte_big, #div_img_impprte_smol {
+        border: 2px solid #ffffff;
+        margin:0px;
+        padding: 0px; 
+        display: inline-block;
+      }
+       #div_img_impprte_smol {  
+        padding: 0px; 
+        margin:2px; 
+        height:204px;  
+        width:400px;  
+      }
+      #img_img_impprte_big, #img_img_impprte_smol {
+        margin-bottom: 0px;
+        margin:5px;  
+        height: 190px;  
+        width:97%; 
+      }
+       
+      /*Partenaire   */ 
+      .partenaire,.partenaire_img
+    { 
+      margin:2px; 
+      padding:0px; 
+      text-align: center;
+      width:70%;    
+      
+    }
+
+    }
+
+
+    /** for Mobile Carte*/ 
+     
+/*     @media (max-width: 360px) {    */
+    @media (max-width: 374px) {   
+     
+     
+
+.main:hover .service {
+    transform: translateY(-25px);
+}
+
+.main:hover .shodowOne {
+    transform: translateY(-15px);
+}
+
+.main:hover .i_1, .main:hover .i_2, .main:hover .i_3 {
+    transform: rotate(360deg);
+}
+
+
+
+    }
+      
+    /**End for Mobile Carte*/ 

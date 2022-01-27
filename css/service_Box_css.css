@@ -1,0 +1,152 @@
+ 
+
+
+.container_srv{
+
+    display:grid;
+    
+}
+
+
+
+.main {
+    width: 100%;
+    /* */ min-height: 340px;
+    text-align: center;
+    position: relative;
+    cursor: pointer; 
+}
+
+.service {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px; 
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform .8s;
+}
+
+.service_logo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: #fff;
+    border: 18px solid #000000; 
+    padding: 11px 0px 0px 0px;
+}
+
+.service_logo .i_1, .service_logo .i_2, .service_logo .i_3 { 
+    margin-top: 7px;
+    transition: transform 1s;
+}
+ 
+ 
+
+
+
+.service h4 {
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 20px 0px 20px;
+    background: #fff;
+    margin: 50px auto;
+    position: relative;
+}
+
+.service h4::after {
+    content: "";
+    width: 100px;
+    height: 35px;
+    background: linear-gradient(to right, #fff, #d80000);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+
+.service h4::before {
+    content: "";
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to right, #d80000, #fff);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.shodowOne {
+    height: 200px;
+    width: 80%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px #060606;
+    transition: transform .8s;
+}
+
+.shodowTwo {
+    height: 200px;
+    width: 64%;
+    background: #fff;
+    position: absolute;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2;
+}
+
+.main:hover .service {
+    transform: translateY(-50px);
+}
+
+.main:hover .shodowOne {
+    transform: translateY(-25px);
+}
+
+.main:hover .i_1, .main:hover .i_2, .main:hover .i_3 {
+    transform: rotate(360deg);
+}
+
+.container_srv {
+    margin-top: 80px;
+}
+
+
+.col-md-4 {
+    min-width: 320px;
+} 
+.srvs_1 {
+    margin-top: 30px;
+}
+
+.srvs_2 {
+    margin-top: 50px;
+}
+
+.srvs_3 {
+    margin-top: 20px;
+}
+/** fr*/
+
+.container_srv_fr {
+    margin-top: 20px;
+}
+.srvs_1_fr  {
+    margin-top: 70px;
+}
+
+.srvs_2_fr {
+    margin-top: 70px;
+}
+
+.srvs_3_fr {
+    margin-top: 70px;
+}
