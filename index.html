@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+
+<head>
+  	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Incentive House | the partner spirit!</title>
+	<meta name="keywords" content="HTML5 Template">
+    <meta name="description" content="Vectus HTML5 Template - v3.1.0.4"> 
+
+    <meta name="keywords" content="HTML5 Template">
+
+
+    <style type="text/css">
+        /*********** Load *****************/
+        /* mon cercel Loading IH   ***********************************/
+        /*  */
+ .loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgb(238, 21, 21) none repeat scroll 0% 0%;
+  z-index: 999999999;
+  text-align: center;
+  transition: all 0.5s ease 0s;
+  opacity: 1;
+left: 0;
+top: 0;
+} 
+
+        .new_Div_Load {
+            margin: 0;
+            padding: 0;
+            background: #959595;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "montserrat", sans-serif;
+            width: 100%;
+            height: 100%;
+            z-index: 9999999;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+
+        .loading_2 {
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border-top: 10px solid white;
+            position: relative;
+            animation: a1 1s linear infinite;
+
+        }
+
+        .loading_2::before,
+        .loading_2::after {
+            content: '';
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            top: -10px;
+            box-sizing: border-box;
+            border-radius: 50%;
+
+        }
+
+        .loading_2::before {
+            border-top: 10px solid black;
+            transform: rotate(120deg);
+        }
+
+        .loading_2::after {
+            border-top: 10px solid #FF0000;
+            /*red ici*/
+            transform: rotate(240deg);
+        }
+
+        @keyframes a1 {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes a2 {
+            to {
+                transform: rotate(-370deg);
+            }
+        }
+    </style>
+
+
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+  ================================================== -->
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/new_fille_css.css">
+    <link rel="stylesheet" href="css/index_css.css">
+    <link rel="stylesheet" href="css/service_Box_css.css"> 
+
+    <!-- *****test **** -->
+
+
+
+    <!--Get your own code at fontawesome.com   w3 scool pour les icons best-->
+    <script src="fonts/a076d05399.js" crossorigin="anonymous"></script>
+   
+
+
+ 
+
+    <link rel="shortcut icon" href="images/logo.jpg">
+
+
+
+</head>
+
+<body id="Home" data-spy="scroll" data-target="#navbar_" data-offset="400" tabindex="10">
+
+
+
+    <!-- BOF Loader loda -->
+
+    <div class="loader">
+
+        <div class="new_Div_Load">
+
+            <div class="loading_2">
+
+            </div>
+        </div>
+    </div>
+    <!--   EOF Loader-->
+
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+
+        jQuery(window).on("load", function () {
+            "use strict";
+            jQuery('.loader').fadeOut();
+        });
+
+    </script>
+
+
+
+
+    <!-- BOF Slider -->
+    <!-- <div class="jx-slider">
+        <div class="jx-top-black"></div>
+
+        
+        <header>
+            <ul>
+                <li class="current"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#wedding">Wedding</a></li>
+                <li><a href="#references">References</a></li>
+                <li><a href="#contacts">Contact</a></li>
+                <li><a href="index-fr.html">Fr</a></li>
+            </ul>
+
+        </header>
+    </div> -->
+
+    <nav id="navbar_" class="navbar navbar-expand-md navbar-light   fixed-top m-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img id="img_brand" src="images/logo_larg.png" alt="Incentive House"></a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallerys">Gallerys</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#videos">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#weddings">Weddings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#references">References</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-fr.html">Fr</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- slider -->
+    <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+        <ol class="carousel-indicators">
+            <li class="active indicator_li" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+            <li class="indicator_li" data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+            <li class="indicator_li" data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+            <li class="indicator_li" data-slide-to="3" data-target="#carouselExampleIndicators"></li>
+            <li class="indicator_li" data-slide-to="4" data-target="#carouselExampleIndicators"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img alt="First slide" class="d-block w-100" src="images/Slide/smal/slide-1.jpg"
+                    alt="Image Incentive house" srcset=" 
+	        	images/Slide/smal/slide-1.jpg  720w,   
+	        	images/Slide/large/slide-1.jpg 2000w,   
+	        	images/Slide/xl/slide-1e.jpg    5600w" style="max-width: 100%;">
+              
+            </div>
+            <div class="carousel-item">
+                <img alt="Second slide" class="d-block w-100" src="images/Slide/smal/slide-2.jpg"
+                    alt="Incentive House" srcset=" 
+	        	images/Slide/smal/slide-2.jpg  720w,   
+	        	images/Slide/large/slide-2.jpg 2000w,   
+	        	images/Slide/xl/slide-2e.jpg    5600w" style="max-width: 100%;">
+            
+            </div>
+            <div class="carousel-item">
+                <img alt="Third slide" class="d-block w-100" src="images/Slide/smal/slide-3.jpg"
+                    alt="Image Incentive House" srcset=" 
+	        	images/Slide/smal/slide-3.jpg  720w,   
+	        	images/Slide/large/slide-3.jpg 2000w,   
+	        	images/Slide/xl/slide-3e.jpg    5600w" style="max-width: 100%;">
+              
+            </div>
+            <div class="carousel-item">
+                <img alt="Third slide" class="d-block w-100" src="images/Slide/smal/slide-4.jpg"
+                    alt="Image Incentive House" srcset=" 
+	        	images/Slide/smal/slide-4.jpg  720w,   
+	        	images/Slide/large/slide-4.jpg 2000w,   
+	        	images/Slide/xl/slide-4e.jpg    5600w" style="max-width: 100%;">
+          
+            </div>
+            <div class="carousel-item">
+                <img alt="Third slide" class="d-block w-100" src="images/Slide/smal/slide-5.jpg"
+                    alt="Image Incentive House" srcset=" 
+	        	images/Slide/smal/slide-5.jpg  720w,   
+	        	images/Slide/large/slide-5.jpg 2000w,   
+	        	images/Slide/xl/slide-5e.jpg    5600w" style="max-width: 100%;">
+            
+            </div>
+        </div>
+        <a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button"><span
+                aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a>
+        <a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button"><span
+                aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+    </div>
+
+    <!-- end slider -->
+
+
+
+    <!-- BOF Slider -->
+
+
+    <div class="card text-center" id="about">
+        <div class="card-header">
+            <div class="ligne_red">
+                <div class="icon"> <i class="fa fa-info-circle"></i> </div>
+            </div>
+
+            <h5 class="card-title mt-3">An event... A mark of history of each</h5>
+        </div>
+        <div class="card-body">
+            <p class="card-text">Incentive House is an event company that conceives, organizes and achieves turn-key
+                services for professionals and individuals: congresses, seminaries, conventions, road-Shows, shows,
+                festivals, Gala dinners, concerts, fashion shows, inaugurations, product launches, sound and lights...
+
+                Taking part of your project, incentive House accompanies you from the emergence of your idea to its
+                achievement, by proposing the best formulas and solutions and insuring a total success of your projects.
+
+                Answering the expectations, responding the ambitions and needs and sharing the performance objectives,
+                incentive House puts your projects into another level and pushes the possible limits further.
+
+                Our main aspiration is to make your brands; companies and organizations publics live a unique and
+                unforgettable experience.</p>
+
+        </div>
+    </div>
+    <!-- ennd carte -->
+
+    </div> <!-- Fin Container ---------------->
+    <hr>
+    <div class="container   container_srv_fr mb-3">
+
+        <div class="row">
+
+            <div class="col-md-4 srvs_1_fr">
+                <div class="main">
+                    <div class="service">
+                        <div class="service_logo">
+                            <i class="fa fa-users i_1" style="font-size: 50px; color:#d80000;"> </i>
+                        </div>
+                        <h4>A competent, willful and available human capital</h4>
+                        <p>Incentive House has at its disposal experienced teams in the different expertise of events
+                            management.
+
+                            We supply you with experienced régisseurs, sound, light and video experts that adhere
+                            passionaly to your projects with a voluntarist and thoughtful spirit in addition to their
+                            reactivity, availability and absolute efficiency.</p>
+                    </div>
+                    <div class="shodowOne"></div>
+                    <div class="shodowTwo"></div>
+                </div>
+            </div>
+            <br><br>
+
+            <div class="col-md-4 srvs_2_fr">
+                <div class="main">
+                    <div class="service">
+                        <div class="service_logo">
+
+                            <i class="far fa-lightbulb  i_2" style="font-size: 60px; color:#d80000;"></i>
+                        </div>
+                        <h4>An advanced high-tech equipments</h4>
+                        <p>We have advanced high-tech equipments that allow us to give your event the quality and
+                            success needed. For your needs of sound systems, lights effects, video projection, special
+                            effects, instant translation, decoration...we propose new-age infrastructures that response
+                            to the extreme stylish plurality of choices and requirements of the incentive in Morocco and
+                            the Maghreb area..</p>
+                    </div>
+                    <div class="service-icon"><i class="line-icon icon-lightbulb"></i></div>
+                    <div class="shodowOne"></div>
+                    <div class="shodowTwo"></div>
+                </div>
+            </div>
+
+            <div class="col-md-4 srvs_3_fr">
+                <div class="main">
+                    <div class="service">
+                        <div class="service_logo">
+                            <i class="fas fa-award  i_3" style="font-size: 60px;color:#d80000"></i>
+                            <!-- <i class=" fas fa-medal" style="font-size: 60px;color:#d80000"></i>  -->
+                            <!-- <i class=" fas fa-graduation-cap" style="font-size: 60px;color:#d80000"></i>  -->
+                            <!-- <i class="fas fa-certificate" style="font-size: 60px;color:#d80000"></i>  -->
+                            <!-- <i class="fas fa-user-graduate" style="font-size: 60px;color:#d80000"></i>  -->
+                        </div>
+                        <h4>A top quality service</h4>
+                        <p> We fully or partially take charge of your projects with a
+                            better cost management and a better quality. We share our partners’ vision with their
+                            target publics and we take them to excellence by creating a real success story with a
+                            better quality/price ratio.</p>
+                    </div>
+                    <div class="shodowOne"></div>
+                    <div class="shodowTwo"></div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div> <!-- Fin Container -->
+
+
+
+    <!-- BOF PROTFOLIO -->
+    <hr> <br>
+    <div id='gallerys'>
+
+        <!-- Background Image -->
+
+        <!-- Background Icon -->
+        <div class="">
+
+
+            <div class="ligne_red">
+                <div class="icon">
+                    <i class="fas fa-images " style="font-size: 50px; color:#d80000"> </i>
+                </div>
+            </div>
+
+
+            <div class="jx-title ">Gallery</div>
+
+            <!-- Section Title -->
+
+        </div>
+
+
+        <center id="center_Big_Smol_importe_Global">
+            <div class='cont' id="center_Big_Smol_importe">
+                <div id="Div_GALLERY">
+
+                    <!-- Div qui containe les GALLERY -->
+
+                </div>
+            </div>
+
+            <BUTTON id="Button_More_Gallery" class="Btn_More" name="More" title="Click For More Picture">
+                View More
+            </BUTTON>
+
+        </center>
+
+
+
+    </div>
+
+    </div> <!--  fin de div role="main" class="main"> -->
+
+
+    <!--Start script Gallery  -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script>
+        var nbr_click_Gallery = 0;
+
+        $(function () {
+            //declare function 
+            $.fn.Fn_Boucle_Gallery = function (indice_Du, indice_Fin) {
+
+                var LesDivs_Gal = "";
+                for (var ii = indice_Du; ii <= indice_Fin; ii++) {
+
+                    LesDivs_Gal = LesDivs_Gal + '<div id="div_img_impprte_smol">' +
+                        '<ul id="ul_img" class="Image_I_H">' +
+                        '  <li id="li_img" data-src="images/Gallerys/G/g(' + ii + ').jpg" data-sub-html="Incentive House">' +
+                        '<a href="">' +
+                        '<img class="lazyestload" id="img_img_impprte_smol" src="images/Chargement/incentive_House_image.png" ' +
+                        'data-srcset="images/Gallerys/S/g(' + ii + ').jpg" />' +
+                        '</a>' +
+                        '</li>' +
+                        '</ul>' +
+                        '</div>'
+
+                };
+                // images\Gallerys\G\g(1).jpg
+
+                $("#Div_GALLERY").append(LesDivs_Gal);
+
+
+                $('.Image_I_H').lightGallery();
+
+
+            }
+        });
+
+        $(document).ready(function () {
+            //call function
+            $("#Div_GALLERY").Fn_Boucle_Gallery(1, 12); //Dubet de la partie
+
+
+
+
+            $("#Button_More_Gallery").click(function () {
+                nbr_click_Gallery = nbr_click_Gallery + 1;
+                // Les Clics
+                if (nbr_click_Gallery == 1) $("#Button_More_Gallery").Fn_Boucle_Gallery(13, 99);
+
+                if (nbr_click_Gallery == 2) $("#Button_More_Gallery").Fn_Boucle_Gallery(100, 201);
+
+                if (nbr_click_Gallery == 3) $("#Button_More_Gallery").Fn_Boucle_Gallery(202, 300);
+
+                if (nbr_click_Gallery == 4) $("#Button_More_Gallery").Fn_Boucle_Gallery(301, 489);
+                //489 total des images de gallery 
+
+
+
+
+                if (nbr_click_Gallery == 4) {
+                    $("#Button_More_Gallery").prop("disabled", true);
+                    $("#Button_More_Gallery").text("End Gallerys");
+                }
+
+
+
+            }); //fin Event clic
+
+        }); //fin ready
+    </script>
+    <!--End script Gallery  -->
+
+    <hr>
+    <div id='videos'>
+
+        <div class="">
+
+
+            <div class="ligne_red">
+                <div class="icon">
+
+                    <i class="fa fa-play-circle " style="font-size: 60px; color:#d80000;"> </i>
+                </div>
+            </div>
+
+            <div class="jx-title ">Videos</div>
+
+        </div>
+
+        <center id="center_Big_Smol_importe_Global">
+            <div class='cont' id="center_Big_Smol_importe">
+                <div id="Div_Vid_2">
+
+                    <!-- Div qui containe les videos -->
+
+                </div>
+            </div>
+
+            <BUTTON id="Button_More_Videos" class="Btn_More" name="More" title="Click For More Videos">
+                View All
+            </BUTTON>
+
+        </center>
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+
+        <!--  VIDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDOESS  -->
+
+        <script>
+            var ligne_videos = ['https://vimeo.com/388241520', 'https://vimeo.com/373371374',
+                'https://vimeo.com/373371349', 'https://vimeo.com/373371322', 'https://vimeo.com/367227633',
+                'https://vimeo.com/364742783', 'https://vimeo.com/347081533', 'https://vimeo.com/344612123',
+                'https://vimeo.com/343246789', 'https://vimeo.com/329773427', 'https://vimeo.com/327697684',
+                'https://vimeo.com/336206691', 'https://vimeo.com/336207082', 'https://vimeo.com/334133170',
+                'https://vimeo.com/327694145', 'https://vimeo.com/310120587', 'https://vimeo.com/306799539',
+                'https://vimeo.com/302413176', 'https://vimeo.com/289117465', 'https://vimeo.com/281403909',
+                'https://vimeo.com/267971576', 'https://vimeo.com/264736757', 'https://vimeo.com/261512819',
+                'https://vimeo.com/255875332', 'https://vimeo.com/258598607', 'https://vimeo.com/251338399',
+                'https://vimeo.com/249787269', 'https://vimeo.com/249786811', 'https://vimeo.com/249786201',
+                'https://vimeo.com/237922297', 'https://vimeo.com/244023907', 'https://vimeo.com/230000544',
+                'https://vimeo.com/222340257', 'https://vimeo.com/225376430', 'https://vimeo.com/222204752',
+                'https://vimeo.com/213499055', 'https://vimeo.com/218454254', 'https://vimeo.com/195105632',
+                'https://vimeo.com/153784323', 'https://vimeo.com/169063935', 'https://vimeo.com/160445566',
+                'https://vimeo.com/145373832', 'https://vimeo.com/128860804', 'https://vimeo.com/126925148',
+                'https://vimeo.com/126667173', 'https://vimeo.com/125798150',
+                'https://youtu.be/zm--jUZRQQg', 'https://youtu.be/WSn9qDPC65Q',
+                'https://youtu.be/TIcHp6WGw_U', 'https://youtu.be/qwOUOwKLKuQ',
+                'https://youtu.be/DMvsIJVuDSw', 'https://youtu.be/8aj6sXJHbp8',
+                'https://youtu.be/4QsFiPhgEFg', 'https://youtu.be/vcOls77o6RM'
+            ];
+
+
+            var ligne_IMG_Video = ['388241520', '373371374',
+                '373371349', '373371322', '367227633',
+                '364742783', '347081533', '344612123',
+                '343246789', '329773427', '327697684',
+                '336206691', '336207082', '334133170',
+                '327694145', '310120587', '306799539',
+                '302413176', '289117465', '281403909',
+                '267971576', '264736757', '261512819',
+                '255875332', '258598607', '251338399',
+                '249787269', '249786811', '249786201',
+                '237922297', '244023907', '230000544',
+                '222340257', '225376430', '222204752',
+                '213499055', '218454254', '195105632',
+                '153784323', '169063935', '160445566',
+                '145373832', '128860804', '126925148',
+                '126667173', '125798150',
+                'zm--jUZRQQg', 'WSn9qDPC65Q',
+                'TIcHp6WGw_U', 'qwOUOwKLKuQ',
+                'DMvsIJVuDSw', '8aj6sXJHbp8',
+                '4QsFiPhgEFg', 'vcOls77o6RM', 'vcOls77o6RM'
+            ];
+
+            var nbr_click_Videos = 0;
+
+
+            /*
+            $(function () {
+               //declare function 
+               $.fn.myfunction = function (nbr,nbr2) {
+                   alert(nbr+'**************'+nbr2); 
+                    $("#my_div").text(nbr+ '//////.'+nbr2);
+               };
+           });
+           
+           $(document).ready(function () {
+               //call function
+               $("#my_div").myfunction(12,87);
+           });     
+           */
+
+            $(function () {
+                //declare function 
+                $.fn.Fn_Boucle_Vides = function (indice_Vid_Du, indice_Vid_Fin) {
+
+                    var LesDivs_Vid = "";
+                    for (var ii = indice_Vid_Du; ii < indice_Vid_Fin; ii++) {
+
+                        LesDivs_Vid = LesDivs_Vid + '<div id="div_img_impprte_smol">' +
+                            '<ul id="ul_vid" class="Video_I_H  ">' +
+                            '  <li id="li_img" data-src="' + ligne_videos[ii] + '" data-sub-html="Incentive House">' +
+                            '<a href="">' +
+                            '<img class=" lazyestload" id="img_img_impprte_smol" src="images/Chargement/incentive_House_image.png" ' +
+                            'data-src="images/Vidoes_IMG/' + ligne_IMG_Video[ii] + '.jpg" />' +
+                            '</a>' +
+                            '</li>' +
+                            '</ul>' +
+                            '</div>'
+
+                    };
+
+
+                    $("#Div_Vid_2").append(LesDivs_Vid);
+
+
+                    $('.Video_I_H').lightGallery();
+
+
+                }
+            });
+
+            $(document).ready(function () {
+                //call function
+                $("#Div_Vid_2").Fn_Boucle_Vides(0, 12); //Dubet de la partie
+
+
+
+
+                $("#Button_More_Videos").click(function () {
+
+                    if (nbr_click_Videos > 1) return; //un seul clic
+                    // nbr Video est 53 
+                    $("#Button_More_Videos").Fn_Boucle_Vides(12, 54);
+                    nbr_click_Videos = nbr_click_Videos + 1;
+
+                    $("#Button_More_Videos").prop("disabled", true);
+                    $("#Button_More_Videos").text("End Videos");
+
+
+                }); //fin Event clic
+
+            }); //fin ready
+        </script>
+
+
+
+
+
+    </div>
+    </div>
+
+    </div>
+
+
+    <hr>
+    <div id='weddings'>
+
+
+        <div class="">
+
+
+            <div class="ligne_red">
+                <div class="icon">
+
+                    <i class="fas fa-chess-queen " style="font-size: 60px; color:#d80000;"> </i>
+                    <!--
+                    <i class="fas fa-drum   " style="font-size: 60px; color:#d80000;"> </i>-->
+                </div>
+            </div>
+
+
+            <div class="jx-title ">WEDDING</div>
+
+            <!-- Section Title -->
+
+        </div>
+
+        <center id="center_Big_Smol_importe_Global">
+            <div class='cont' id="center_Big_Smol_importe">
+                <div id="Div_Wedding">
+
+                    <!-- Div qui containe les Wedding -->
+
+                </div>
+            </div>
+
+            <BUTTON id="Button_More_Wedding" class="Btn_More" name="More" title="Click For More Picture">
+                View More
+            </BUTTON>
+
+        </center>
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+
+    </div> <!-- Fin de  Wzdding -->
+
+
+    <!-- Wedddddddddddddddddddddddddddddddddddddddddddddddddddddddddddding  -->
+    <script>
+        var nbr_click_Wedding = 0;
+
+
+
+        $(function () {
+            //declare function 
+            $.fn.Fn_Boucle_Wedding = function (indice_Du, indice_Fin) {
+
+                var LesDivs_Wed = "";
+                for (var ii = indice_Du; ii <= indice_Fin; ii++) {
+
+                    LesDivs_Wed = LesDivs_Wed + '<div id="div_img_impprte_smol">' +
+                        '<ul id="ul_img" class="Image_I_H">' +
+                        '  <li id="li_img" data-src="images/Wedding/G/m(' + ii + ').jpg" data-sub-html="Incentive House">' +
+                        '<a href="">' +
+                        '<img class="lazyestload" id="img_img_impprte_smol" src="images/Chargement/incentive_House_image.png" ' +
+                        'data-srcset="images/Wedding/S/m(' + ii + ').jpg" />' +
+                        '</a>' +
+                        '</li>' +
+                        '</ul>' +
+                        '</div>'
+
+                };
+
+
+                $("#Div_Wedding").append(LesDivs_Wed);
+
+
+                $('.Image_I_H').lightGallery();
+
+
+            }
+        });
+
+        $(document).ready(function () {
+            //call function
+            $("#Div_Wedding").Fn_Boucle_Wedding(1, 12); //Dubet de la partie
+
+
+
+
+            $("#Button_More_Wedding").click(function () {
+
+                nbr_click_Wedding = nbr_click_Wedding + 1;
+
+                if (nbr_click_Wedding == 1) $("#Button_More_Wedding").Fn_Boucle_Wedding(13, 60);
+                //Le premer clic
+
+                if (nbr_click_Wedding == 2) $("#Button_More_Wedding").Fn_Boucle_Wedding(61, 129);
+                //Le premer clic
+
+
+                //129 total des images de Mariage  
+
+                if (nbr_click_Wedding >= 2) {
+                    $("#Button_More_Wedding").prop("disabled", true);
+                    $("#Button_More_Wedding").text("End Weddings");
+                }
+
+
+
+
+            }); //fin Event clic
+
+        }); //fin ready
+    </script>
+
+
+    </div>
+
+    </div>
+    </div>
+
+
+
+    <br />
+    <hr><br />
+
+
+    <div id='references'>
+
+
+
+        <div class="">
+
+
+            <div class="ligne_red">
+                <div class="icon">
+
+                    <i class="fa fa-users" style="font-size: 60px; color:#d80000;"> </i>
+                </div>
+            </div>
+            <div class="jx-title">References</div>
+            <div class="jx-subtitle">
+                <p>Our Partners</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="Div_Partenaire_1">
+
+
+    </div>
+
+    <!--------------------          Deuxieme Parte ---------------------->
+
+
+
+    <div class="jx-subtitle">
+        <p>They Trusted Us</p>
+    </div>
+
+
+
+
+    <div id="Div_Partenaire_2">
+
+
+    </div>
+
+
+    <script type="text/javascript">
+        var Liste_Img_Partners, Liste_Img_;
+
+        Liste_Img_Partners = insert_Image("images/Preferences/Nos_partenaires/", 26);
+        //  26  Nomber des Images partenaire
+        Liste_Imges = insert_Image("images/Preferences/", 109);
+        //  109 Nomber des Images 
+
+
+        function_Add_Images(Liste_Img_Partners, 'Div_Partenaire_1');
+
+        function_Add_Images(Liste_Imges, 'Div_Partenaire_2');
+
+
+
+        function function_Add_Images(Array_liste, div_ID) {
+
+            var MonDiv_Logo2 = document.getElementById(div_ID);
+
+            var innerHTML_Logo = MonDiv_Logo2.innerHTML,
+                string_Ligne;
+
+            string_Ligne = '';
+            // src="images/Logo_Incentive_Huse_pour_le_ Partenaires.jpg"  
+            // src="images/Logo00.png" 
+            for (var i = 0; i < Array_liste.length; i++) {
+
+
+                string_Ligne = string_Ligne +
+                    '<divclass="partenaire"  >  ' +
+                    '<img  class="lazyestload partenaire_img"	  ' +
+                    'data-src="' + Array_liste[i] + '"  src="images/Chargement/incentive_House_Partenaire.png"    >      ' +
+                    '</div>  ';
+
+
+            }
+            MonDiv_Logo2.innerHTML = MonDiv_Logo2.innerHTML + string_Ligne;
+        }
+
+
+        function insert_Image(Chemain, Nbr_Image) {
+            var Images_Name = Chemain + '1(0).jpg ';
+
+            for (var i = 1; i < Nbr_Image; i++) {
+
+                Images_Name = Images_Name + ',' + Chemain + '1(' + i + ').jpg ';
+            }
+
+            Images_Name = Images_Name.split(',');
+
+            return Images_Name;
+        }
+    </script>
+    </div>
+    <!-- fin des partenaires -->
+
+    <br /><hr><br />
+
+
+    <!-- debut de Contact -->
+
+    <div class="" id="contact">
+
+
+        <div class="ligne_red">
+            <div class="icon">
+                <i class="fas fa-envelope" style="font-size: 60px; color:#d80000;"> </i>
+            </div>
+        </div>
+
+
+        <div class="jx-title ">Contact Us</div>
+
+
+    </div>
+
+
+    <section class="get_in_touch">
+        <h1 id="bas" class="title">Welcome To Incentive House</h1>
+
+        <div class="contaigner">
+            <form id="contactForm" action="contact.php" method="POST">
+
+                <div class="contact-form row">
+
+                    <div class="form-field col-lg-6">
+                        <input id="name" class="input-text" type="text" name="_name">
+                        <label for="name" class="label">Name</label>
+                    </div>
+
+
+                    <div class="form-field col-lg-6">
+                        <input id="email" class="input-text" type="text" name="email" required>
+                        <label for="email" class="label">Email*</label>
+                    </div>
+
+
+                    <div class="form-field col-lg-6">
+                        <input id="subject" class="input-text" type="text" name="subject" required>
+                        <label for="subject" class="label">Subject*</label>
+                    </div>
+
+
+                    <div class="form-field col-lg-12">
+                        <input id="message" class="input-text" type="text" name="message" required>
+                        <!-- <textarea id="message" rows="20"  cols="10" class="input-text" type="text" name="message">hhhh</textarea> -->
+                        <label for="message" class="label">Message*</label>
+                    </div>
+
+
+                    <div class="form-field col-lg-12">
+                        <input type="submit" class="submit-btn  " name="Submit_email" value="Submit">
+                    </div>
+                    <!-- <label id="contactError"  >000000000000</label> -->
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- fin de Contact -->
+
+
+
+
+
+    <!-- Google Map Incentive  House  Med-->
+<!-- 
+    <div class="map_" style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no"
+            marginheight="0" marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=31.67587003686934,%20-8.035275588931102+(Incentive%20House%20)&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                href="https://www.gps.ie/car-satnav-gps/"> </a></iframe>
+    </div> -->
+    <!--Fin  Google Map -->
+
+
+    <!-- <div class="bg-danger Dernier_Div"> -->
+    <div class="bg-dark Dernier_Div  text-white ">
+
+
+
+
+        <!-- <i class="fas fa-globe" style="font-size: 60px; color:#d80000;"> </i> -->
+        <!--
+                <i class="fas fa-drum   " style="font-size: 60px; color:#d80000;"> </i>-->
+        <div class="container pt-1">
+            <div class="row  ">
+                <div class="col-md-1 float-sm-left ">
+                    <i class="fas fa-map-marker-alt" style="font-size: 60px; color:#d80000;"> </i>
+                </div>
+                <div class="col-md-5 text-lg-left float-sm-right  pl-1 ">
+                    <h2 class="mb-1">Marrakech</h2>
+                    <p class="mt-1">Safi Road. 98 Al Massar I, Industrial District</p>
+                </div>
+
+
+                <div class="col-md-1 float-sm-left    pl-1">
+                    <i class="fas fa-globe" style="font-size: 60px; color:#d80000;"> </i>
+                </div>
+                <div class="col-md-5 float-sm-right pl-1">
+                    <h2 class="mb-1">+212-524-356-883</h2>
+                    <p class="mt-1">info@incentivehouse.ma</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- EOF Main Content -->
+
+
+        <!-- Social Media  debut IH-->
+        <div class="middle_I_H">
+            <a class="btn_ fb_ " title="Facebook" href="https://www.facebook.com/Incentivehouseofficiel/">
+                <i class=" fab fa-facebook-f"></i>
+            </a>
+            <a class="btn_ tw_" title="Twitter" href="https://twitter.com/incentive_house">
+                <i class="fab fa-twitter"> </i>
+            </a>
+            <a class="btn_ gg_" title="Google Plus" href="https://plus.google.com/u/0/118161185105486005203">
+                <i class="fab fa-google-plus-g i-google_plus" aria-hidden="true"> </i>
+            </a>
+            <a class="btn_ ins_" title="Instagram" href="https://www.instagram.com/incentive1house/?hl=fr">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="btn_ pnt_" title="Pinterest" href="https://www.pinterest.com/incentive1house/">
+                <i class="fab fa-pinterest-p i-pinterest" aria-hidden="true"></i>
+            </a>
+
+        </div>
+        <!-- Fin Social Media fex  IH-->
+
+        <div class="container mb-3">
+            <div class="col  text-center">
+                <div class="footer-copyright" style="
+            background: linear-gradient(to right,red 40%,rgb(255, 255, 255) 60%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;">
+                    © Incentive House 2017 - All Copyright Reserved Incentive House
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- EOF Footer -->
+    <!-- Footer -->
+    <!-- <script type="text/javascript" src="JS/bootstrap.min.js"></script> -->
+    <!-- problrmr d affichage avec scrollTop <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>    -->
+
+
+
+
+
+
+
+
+    <!-- I H Bts Scroll Up            -->
+
+    <button id="btn_Scroll_up" class="btn" onclick="show_more_scroll()" title="Go Up">
+        <i class='fas fa-angle-double-up'></i>
+    </button>
+    <!--END  I H Bts Scroll Up            -->
+
+    <!-- I H Btn Info      social Media     --> 
+    <menu class="close_   ">
+            <a  title="Pinterest" href="https://www.pinterest.com/incentive1house/"           class="action_"><i class="fab fa-pinterest-p i-pinfterest"></i></a>
+            <a  title="Google Plus" href="https://plus.google.com/u/0/118161185105486005203"  class="action_"><i class="fab fa-google-plus-g i-gofogle_plus"></i></a>
+            <a  title="Instagram" href="https://www.instagram.com/incentive1house/?hl=fr"     class="action_"><i class="fab fa-instagram"></i></a>
+            <a  title="Twitter" href="https://twitter.com/incentive_house" class="action_"><i class="fab fa-twitter"></i></a>
+            <a  title="Facebook" href="https://www.facebook.com/Incentivehouseofficiel/"      class="action_" ><i class="fab fa-facebook-f"></i></a>
+    
+
+            <a  class="btn trigger_ " id="btn_Scroll_infos" title="Social Media I H">
+                <i class="fas fa-plus" ></i>
+            </a>
+         
+          </menu>
+
+
+    <script>
+
+        const trigger = document.querySelector("menu > .trigger_");
+        trigger.click();
+        trigger.addEventListener('click', (e) => {
+            e.currentTarget.parentElement.classList.toggle("open_");
+        });
+    </script> 
+    <!--fin  I H Btn Info      social Media     --> 
+
+
+    <script type="text/javascript">
+        window.onscroll = function () {
+            scroll_Fun();
+        };
+
+        function scroll_Fun() {
+            if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+                document.getElementById('btn_Scroll_up').style.display = "block";
+            } else {
+                document.getElementById('btn_Scroll_up').style.display = "none";
+            }
+        }
+
+        function show_more_scroll() {
+            document.documentElement.scrollTop = 0;
+
+        }; 
+ 
+    </script>
+
+    <!-- END I H Bts Scroll Up                 -->
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+
+    <!-- Nav 10 -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- css Loca   -->
+ 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="css/nav-10-css.css" rel="stylesheet">
+
+    <!-- End Nav  -->
+
+
+    <!-- lightgallery CSS  -->
+    <link href="dist/css/lightgallery.css" rel="stylesheet">
+    <link href="dist/css/lg-transitions.css" rel="stylesheet">
+    <!--END  lightgallery CSS -->
+
+
+
+    <!-- Slider Nav 10 js  -->
+    <script src="js/jquery-3.6.0.min.js">   </script>
+    <script src="js/popper.min.js">   </script>
+    <script src="js/bootstrap.min.js">   </script>
+    <!--End Slider Nav 10  -->
+
+
+
+
+    <!-- Mon nouveu theme 2020 MOhamed Milou Incentive House -->
+    <link rel="stylesheet" type="text/css" href="css/selection_option_css.css">
+
+    <!-- for moading Images -->
+    <script src="js/lazyestload.js"></script>
+
+    <!-- lightgallery  JS  -->
+
+    <script src="dist/js/lightgallery-all.js"></script>
+
+    <script src="dist/js/lg-video.js"></script>
+
+    <script src="dist/js/player.js"></script>
+    <!--END  lightgallery  JS-->
+
+
+
+
+
+
+
+</body>
+
+</html>
