@@ -73,8 +73,8 @@ if (!empty($_POST['_name']) && !empty($_POST['subject']) && !empty($_POST['email
                 ]
             ]
         ];
-        // $response = $mj->post(Resources::$Email, ['body' => $body]);
-        // $response->success(); 
+         $response = $mj->post(Resources::$Email, ['body' => $body]);
+        $response->success(); 
         echo '<div class="p-3 mb-2 bg-success text-white">Email envoyé avec succès !</div>';
   
     } else {    
@@ -86,12 +86,12 @@ if (!empty($_POST['_name']) && !empty($_POST['subject']) && !empty($_POST['email
     // header('Location: index-1.html');
     // echo "location v";
     //   <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
-        echo '<div class="p-3 mb-2 bg-danger text-white">Erreur !!!</div> '; 
+        echo '<div class="p-3 mb-2 bg-danger text-white">Erreur !!! test</div> '; 
 }
 
 // echo '<div class="p-3 mb-2 bg-danger text-white">Email non valide</div>';
 // echo '<div class="p-3 mb-2 bg-success text-white">Email envoyé avec succès !</div>';
-echo ' <br><br><br><br> <a href="index.html">Reteur à la page </a>';
+echo ' <br><br><br><br> <a href="index.html">Reteur à la page test</a>';
  
 ?> 
     </div>
